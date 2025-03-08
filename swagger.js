@@ -13,7 +13,7 @@ const options = {
         },
         servers: [
             {
-                url: 'https://speer-be.onrender.com', // URL of the API server
+                url: 'http://localhost:3000', // URL of the API server
             },
         ],
         components: {
