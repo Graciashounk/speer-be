@@ -56,10 +56,12 @@ GET /users: Get list of users
    cd speer-be
 
 2. Install dependencies: 
--npm install
--npm install --save dotenv-extended 
--npm install express express-session connect-mongo bcrypt mongoose
--npm install swagger-jsdoc swagger-ui-express
+   ```bash
+   npm install
+   npm install --save dotenv-extended 
+   npm install express express-session connect-mongo bcrypt mongoose
+   npm install swagger-jsdoc swagger-ui-express
+   ```
 
 
 3. Create a .env file in the root directory and add the following environment variables:
