@@ -52,8 +52,9 @@ GET /users: Get list of users
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Graciashounk/speer-be.git
-   cd speer-be
+   git clone https://github.com/yourusername/notesapp.git
+   cd notesapp
+   ```
 
 2. Install dependencies: 
    ```bash
@@ -63,17 +64,25 @@ GET /users: Get list of users
    npm install swagger-jsdoc swagger-ui-express
    ```
 
-
 3. Create a .env file in the root directory and add the following environment variables:
+   ```
+   MONGO_URI=mongodb+srv://speerbackend:Z5ofFGDkMSb@be-test-speer.2mrpr.mongodb.net/?retryWrites=true&w=majority&appName=be-test-speer
+   ```
 
-MONGO_URI=mongodb+srv://speerbackend:Z5ofFGDkMSb@be-test-speer.2mrpr.mongodb.net/?retryWrites=true&w=majority&appName=be-test-speer
+4. Start the application: 
+   ```bash
+   npm start
+   ```
 
-
-4. Start the application: npm start
-
-5. Run the tests: npm test
+5. Run the tests: 
+   ```bash
+   npm test
+   ```
 
 6. Access Swagger Documentation:
    - Local Development: http://localhost:3000/api-docs
    - Deployed Version: https://speer-be.onrender.com/api-docs
 
+## Deployment
+
+The application is configured to work with Render hosting. The Swagger documentation will automatically use the correct URL in both local development and production environments.
