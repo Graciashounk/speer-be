@@ -20,7 +20,7 @@ const Note = require('../models/note');
  *       - ApiKeyAuth: []
  *     parameters:
  *       - in: query
- *         name: q
+ *         name: q="string"
  *         required: true
  *         description: The search query.
  *         schema:
