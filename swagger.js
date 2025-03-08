@@ -13,8 +13,9 @@ const options = {
         },
         servers: [
             {
-                url: 'http://localhost:3000', // URL of the API server
-            },
+                  url: process.env.RENDER_EXTERNAL_URL || 'http://localhost:3000',
+                description: 'API Server'
+            }
         ],
         components: {
             securitySchemes: {
