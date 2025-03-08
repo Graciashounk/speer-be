@@ -9,27 +9,27 @@ const options = {
         info: {
             title: 'Notes API', 
             version: '1.0.0', 
-            description: 'A simple Express Notes API' 
+            description: 'A simple Express Notes API. To use protected endpoints, click the "Authorize" button and enter the API key with value: "your-api-key"' 
         },
         servers: [
             {
-                  url: process.env.RENDER_EXTERNAL_URL || 'http://localhost:3000',
+                url: process.env.RENDER_EXTERNAL_URL || 'http://localhost:3000',
                 description: 'API Server'
             }
         ],
         components: {
             securitySchemes: {
-                // Security scheme
                 ApiKeyAuth: {
                     type: 'apiKey',
-                    in: 'header', 
-                    name: 'x-api-key' 
+                    in: 'header',
+                    name: 'x-api-key',
+                    description: 'Enter API key value: "your-api-key"'
                 }
             }
         },
         security: [
             {
-                ApiKeyAuth: [] // Apply the security scheme globally
+                ApiKeyAuth: []
             }
         ]
     },
