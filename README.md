@@ -71,4 +71,7 @@ MONGO_URI=mongodb+srv://speerbackend:Z5ofFGDkMSb@be-test-speer.2mrpr.mongodb.net
 
 5. Run the tests: npm test
 
-6. Swagger GUI http://localhost:3000/api-docs
+6. Access Swagger Documentation:
+   - Local Development: http://localhost:3000/api-docs
+   - Deployed Version: https://speer-be.onrender.com/api-docs
+
