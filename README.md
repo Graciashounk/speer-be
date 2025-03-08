@@ -83,6 +83,22 @@ GET /users: Get list of users
    - Local Development: http://localhost:3000/api-docs
    - Deployed Version: https://speer-be.onrender.com/api-docs
 
+## API Authentication
+
+Most endpoints require API key authentication. To use the Swagger UI:
+
+1. Click the "Authorize" button at the top of the Swagger UI page
+2. In the "ApiKeyAuth" section, enter the API key: `your-api-key`
+3. Click "Authorize"
+4. Close the authorization modal
+
+You can now test any protected endpoint. The API key will be automatically included in your requests.
+
+For direct API calls (outside Swagger), include the header:
+```
+x-api-key: your-api-key
+```
+
 ## Deployment
 
 The application is configured to work with Render hosting. The Swagger documentation will automatically use the correct URL in both local development and production environments.
