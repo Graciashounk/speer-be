@@ -1,2 +1,0 @@
-# speer-be
-notes app
