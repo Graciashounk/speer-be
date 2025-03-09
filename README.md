@@ -4,6 +4,61 @@
 
 NotesApp is a secure and scalable RESTful API that allows users to create, read, update, and delete notes. The application also allows users to share their notes with other users and search for notes based on keywords.
 
+## Technical Choices
+
+### Framework: Express.js
+- **Why Express.js?**
+  - Lightweight and unopinionated framework allowing flexible architecture
+  - Extensive middleware ecosystem for features like rate limiting and authentication
+  - Excellent performance and low overhead
+  - Large community support and well-maintained packages
+  - Easy integration with MongoDB and other tools
+
+### Database: MongoDB
+- **Why MongoDB?**
+  - Perfect for document-based data like notes with variable content
+  - Built-in text search capabilities with text indexes
+  - Excellent scalability for high-traffic applications
+  - Native support for JSON-like documents
+  - Powerful aggregation pipeline for complex queries
+  - Easy integration with Node.js through Mongoose
+
+### Key Third-Party Tools
+
+1. **Mongoose**
+   - ODM (Object Data Modeling) for MongoDB
+   - Provides schema validation and type checking
+   - Simplifies database operations with a clean API
+   - Supports middleware for pre/post operations
+
+2. **express-rate-limit**
+   - Protects API from abuse through rate limiting
+   - Configurable time windows and request limits
+   - IP-based rate limiting out of the box
+   - Currently set to 100 requests per 15 minutes
+
+3. **bcryptjs**
+   - Secure password hashing
+   - Industry-standard security practices
+   - Automatic salt generation and secure comparison
+
+4. **express-session & connect-mongo**
+   - Session management for user authentication
+   - Persistent sessions stored in MongoDB
+   - Secure session handling with configurable options
+
+5. **Swagger/OpenAPI (swagger-jsdoc & swagger-ui-express)**
+   - Interactive API documentation
+   - Built-in API testing interface
+   - Clear endpoint specifications
+   - Automatic documentation generation from code comments
+
+6. **Jest & Supertest**
+   - Comprehensive testing framework
+   - Support for async testing
+   - HTTP assertions for API testing
+   - Mocking capabilities for unit tests
+
 ## Features
 
 - User authentication and authorization
@@ -12,17 +67,6 @@ NotesApp is a secure and scalable RESTful API that allows users to create, read,
 - Search for notes based on keywords
 - Rate limiting to handle high traffic
 - Unit and integration tests
-
-## Technologies Used
-
-- Express.js
-- MongoDB
-- Mongoose
-- bcrypt.js
-- express-rate-limit
-- Jest
-- Supertest
-
 
 ## API Endpoints
 
